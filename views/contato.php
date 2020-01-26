@@ -14,25 +14,18 @@
 
         <links>
             <link rel="stylesheet" href="../css/bootstrap.min.css">
-            <link rel="stylesheet" href="../css/flexslider.css">
-            <link rel="stylesheet" href="../css/jquery.fancybox.css">
             <link rel="stylesheet" href="../css/main.css">
             <link rel="stylesheet" href="../css/mine.css">
-            <link rel="stylesheet" href="../css/responsive.css">
-            <link rel="stylesheet" href="../css/animate.min.css">
-            <link rel="stylesheet" href="../css/font-icon.css">
             <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-
-            
             <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
         </links>
 
     </head>
-    
     <body>
 
         <!--Cabeçalho-->
         <header id="header" class="fixed">
+    
             <!--Formulario de login-->
             <div id="login" class="frmLogin">
                 <form method="post" action="index.php">
@@ -60,32 +53,40 @@
             </div>
         </header><!--Fim cabeçalho--> 
 
-        <div id="form-content">
-            <form action="../libraries/enviaEmail.php" method="Post" id="contato">
-                <label for="nome">Nome:</label>
-                <input type="text" name="nome" id="nome" /><br/><br/>
+        <div id="form-content" class="row ">
+            <div id="form-title"class="col-lg-12">
+              <h2>Fale Conosco</h2>
+              <form  id="contato" action="../libraries/enviaEmail.php" method="post">
+            </div>
+            <div class="row">
+                <div class="col-md-6 form-group">
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome" name="nome" class="form-control form-control-lg">
+                </div>
+                <div class="col-md-6 form-group">
+                    <label for="email">Email</label>
+                    <input type="text" id="email" name="email" class="form-control form-control-lg">
+                </div>
+            </div>
+            <div class="row">
+                      <div class="col-md-6 form-group">
+                          <label for="assunto">Assunto</label>
+                          <input type="text" id="assunto" name="assunto" class="form-control form-control-lg">
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-md-12 form-group">
+                          <label for="mensagem">Mensagem</label>
+                          <textarea id="mensagem" name="mensagem" cols="30" rows="10" class="form-control"></textarea>
+                      </div>
+                  </div>
 
-                <label for="email">E-mail:</label>
-                <input type="text" name="email" id="email" /><br/><br/>
-
-                <label for="assunto">Assunto:</label>
-                <input type="text" name="assunto" id="assunto" /><br/><br/>
-
-                <label for="mensagem">Mensagem:</label>
-                <textarea name="mensagem" id="mensagem" cols="30" rows="10"></textarea><br/><br/>
-
-                <input type="submit" name="submit" value="Teste"/>
-            </form>
+                  <div class="row">
+                      <div class="col-12">
+                          <input type="submit" name="submit" value="Enviar Email" class="btn btn-primary py-3 px-5">
+                      </div>
+                  </div>
         </div>
 
-
-
-
-
-
-        <form action="" method="post">
-            <a href="mailto:daab@daab.com.br">enviar email</a>
-        </form>
     </body>
-
 </html>

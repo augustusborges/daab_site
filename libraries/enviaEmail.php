@@ -18,15 +18,15 @@ $mail->Host = "smtp.hostinger.com.br"; # Endereço do servidor SMTP
 $mail->Port = 587; // Porta TCP para a conexão
 $mail->SMTPAutoTLS = false; // Utiliza TLS Automaticamente se disponível
 $mail->SMTPAuth = true; # Usar autenticação SMTP - Sim
-$mail->Username = 'alexandre@daab.com.br'; # Usuário de e-mail
+$mail->Username = 'faleconosco@daab.com.br'; # Usuário de e-mail
 $mail->Password = 'Carol0608'; // # Senha do usuário de e-mail
 
 # Define o remetente (você)
-$mail->From = 'alexandre@daab.com.br'; # Seu e-mail
+$mail->From = 'faleconosco@daab.com.br'; # Seu e-mail
 $mail->FromName = $nome; // Seu nome
 
 # Define os destinatário(s)
-$mail->AddAddress('augustusborges@gmail.com', 'Fulano da Silva'); # Os campos podem ser substituidos por variáveis
+$mail->AddAddress('augustusborges@gmail.com', $nome); # Os campos podem ser substituidos por variáveis
 #$mail->AddAddress('webmaster@nomedoseudominio.com'); # Caso queira receber uma copia
 #$mail->AddCC('ciclano@site.net', 'Ciclano'); # Copia
 #$mail->AddBCC('fulano@dominio.com.br', 'Fulano da Silva'); # Cópia Oculta
@@ -37,7 +37,7 @@ $mail->IsHTML(true); # Define que o e-mail será enviado como HTML
 
 # Define a mensagem (Texto e Assunto)
 $mail->Subject = $assunto; # Assunto da mensagem
-$mail->Body = $mensagem;
+$mail->Body = $nome."<br/>".$email."<br/>".$mensagem;
 $mail->AltBody = "Este é o corpo da mensagem de teste, somente Texto! \r\n :)";
 
 # Define os anexos (opcional)

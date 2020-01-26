@@ -71,7 +71,7 @@
                             <li><a href="#intro">Quem Somos</a></li>
                             <li><a href="#services">Serviços</a></li>
                             <!--<li><a href="#works">Produtos</a></li>-->
-                            <li><a href="views/faleconosco.php">Fale Conosco</a></li>
+                            <li><a href="views/contato.php">Fale Conosco</a></li>
                             <!--<li><a href="#teams">Our Team</a></li>-->
                             <!--<li><a href="#testimonials">Testimonials</a></li>-->
                         </ul>
@@ -427,7 +427,7 @@
             <div class="container">
                 <div class="col-md-8 col-md-offset-2 text-center">
                     <h3>Procurando Soluções Tecnológicas? Vamos trabalhar juntos?!</h3>
-                    <a href="views/faleconosco.php" class="btn btn-large">Fale Conosco</a> </div>
+                    <a href="views/contato.php" class="btn btn-large">Fale Conosco</a> </div>
                 </div>
 
         </section><!-- End Get a quote section --> 

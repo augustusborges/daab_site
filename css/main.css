@@ -594,12 +594,16 @@ ul li {
 
 #form-content{
 	position:absolute;
-	border-style: solid;
 	margin-top: 100px;
-	margin-left: 40%;
+	width:100%;
+	padding-left: 3%;
+	padding-right: 3%;
 }
 
-#form-content label{
+#form-title{
+	text-align: center;
+}
+/*#form-content label{
 	width: 70px;
 }
 
@@ -608,3 +612,5 @@ ul li {
 	border-width: 0px 0px 1px 0px;
 	border-color:green;
 }
+
+*/
