@@ -1,7 +1,9 @@
 <?php
 # Inclui o arquivo class.phpmailer.php localizado na pasta phpmailer
+#require 'PHPMailerAutoload.php';
 require_once("phpmailer.php");
 require_once("smtp.php");
+require_once("OAuth.php");
 
 $nome = $_POST['nome'];
 $email = $_POST['email'];

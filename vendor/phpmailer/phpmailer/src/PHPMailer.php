@@ -18,7 +18,7 @@
  * FITNESS FOR A PARTICULAR PURPOSE.
  */
 
-//namespace PHPMailer\PHPMailer;
+namespace PHPMailer\PHPMailer;
 
 /**
  * PHPMailer - PHP email creation and transport class.
@@ -1423,7 +1423,6 @@ class PHPMailer
             return $this->postSend();
         } catch (Exception $exc) {
             $this->mailHeader = '';
-            
             $this->setError($exc->getMessage());
             if ($this->exceptions) {
                 throw $exc;
