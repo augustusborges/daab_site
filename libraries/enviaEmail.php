@@ -6,10 +6,26 @@
 require_once("phpmailer.php");
 require_once("smtp.php");
 
+require_once "../vendor/autoload.php";
+
+use Monolog\Logger;
+use Monolog\Handler\StreamHandler;
+
+$log = new Logger('name');
+$log->pushHandler(new StreamHandler('log.txt', Logger::WARNING));
+
+
 $nome = $_POST['nome'];
 $email = $_POST['email'];
 $assunto = $_POST['assunto'];
 $mensagem = $_POST['mensagem'];
+
+$log->warning("Dados inseridos pelo usuario");
+$log->warning('Cliente: ' . $nome);
+$log->warning('Email: ' . $email);
+$log->warning('Assunto: ' . $assunto);
+$log->warning('Mensagem: ' . $mensagem);
+
 
 
 # Inicia a classe PHPMailer
@@ -48,6 +64,9 @@ $mail->AltBody = "Este é o corpo da mensagem de teste, somente Texto! \r\n :)";
 
 # Envia o e-mail
 $enviado = $mail->Send();
+
+$log->warning($enviado);
+
 
 # Limpa os destinatários e os anexos
 $mail->ClearAllRecipients();

@@ -1,0 +1,6 @@
+[2020-02-21T20:20:49.629976+01:00] name.WARNING: Dados inseridos pelo usuario [] []
+[2020-02-21T20:20:49.662541+01:00] name.WARNING: Cliente: Alexandre Augustus Borges [] []
+[2020-02-21T20:20:49.662579+01:00] name.WARNING: Email: teste@teste.com [] []
+[2020-02-21T20:20:49.662600+01:00] name.WARNING: Assunto: teste de aquisicao de sistema [] []
+[2020-02-21T20:20:49.662619+01:00] name.WARNING: Mensagem: teste de aquisicao de sistema [] []
+[2020-02-21T20:20:52.556996+01:00] name.WARNING: 1 [] []

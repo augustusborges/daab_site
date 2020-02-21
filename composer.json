@@ -1,6 +1,12 @@
 {
+    "name": "alexandre.borges/daab_site",
+    "authors": [
+        {
+            "name": "alexandre.borges",
+            "email": "alexandre.borges@stoneage.com.br"
+        }
+    ],
     "require": {
-        "psr/log": "^1.1",
-        "phpmailer/phpmailer": "^6.1"
+        "psr/log": "^1.1"
     }
 }
