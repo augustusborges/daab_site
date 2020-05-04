@@ -38,7 +38,7 @@ $mail->Port = 587; // Porta TCP para a conexão
 $mail->SMTPAutoTLS = false; // Utiliza TLS Automaticamente se disponível
 $mail->SMTPAuth = true; # Usar autenticação SMTP - Sim
 $mail->Username = 'faleconosco@daab.com.br'; # Usuário de e-mail
-$mail->Password = 'Carol0608'; // # Senha do usuário de e-mail
+$mail->Password = '@lex2502'; // # Senha do usuário de e-mail
 
 # Define o remetente (você)
 $mail->From = 'faleconosco@daab.com.br'; # Seu e-mail
